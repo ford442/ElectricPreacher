@@ -1,7 +1,7 @@
 COMPILER_FLAGS= -std=c++17 -masm=intel -mlong-double-128 -ggdb3 -Wpedantic -Wall -Wextra -Wconversion -Wsign-conversion -Wstrict-null-sentinel -Wold-style-cast -Wnoexcept -Wctor-dtor-privacy -Woverloaded-virtual -Wsign-promo -Wzero-as-null-pointer-constant -Wsuggest-final-types -Wsuggest-final-methods -Wsuggest-override
-LINKER_FLAGS= -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer lib/libjsoncpp.a 
-EXECUTABLE=ElectricPreacher
-CXX=g++ -ggdb
+LINKER_FLAGS= -sUSE_SDL=2 lib/libjsoncpp.a 
+EXECUTABLE=ElectricPreacher.js
+CXX=em++
 
 HEADER=$(wildcard includes/*.hpp)
 SOURCES=$(wildcard src/*.cpp)
