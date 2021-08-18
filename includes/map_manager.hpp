@@ -45,7 +45,7 @@ class MapManager{
         //Others
         void init(Screen* screen);
         int load_map(std::string path);
-        int add_layers(json::Value layers);
+        int add_layers(Json::Value layers);
         int render(Screen *screen, SDL_Rect position);
 
     private:
