@@ -99,7 +99,7 @@ int MapManager::load_map(std::string path){
     return 0;
 }
 
-int add_layers(json::Value layers){
+int add_layers(Json::Value layers){
 
     return 0;
 }
